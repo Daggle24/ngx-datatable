@@ -73,6 +73,7 @@ export class DataTableSelectionComponent {
       this.selectRow(event, index, row);
     } else if (type === 'keydown') {
       if ((<KeyboardEvent>event).keyCode === Keys.return) {
+        index=index++
         this.selectRow(event, index, row);
       } else {
         this.onKeyboardFocus(model);
